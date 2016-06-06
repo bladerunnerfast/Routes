@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    card_view:cardElevation="3dp"
+    android:clickable="true"
+    card_view:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="departure"
+            android:id="@+id/tv_departure"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_journey_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tv_departure_date"
+            android:text="departure Date"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tv_departure"
+            android:layout_toEndOf="@+id/tv_journey_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tv_arrival"
+            android:text="arrival"
+            android:layout_marginEnd="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tv_arrival_Date"
+            android:text="arrivalDate"
+            android:layout_below="@+id/tv_distance"
+            android:layout_alignEnd="@+id/tv_arrival" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="travel id"
+            android:id="@+id/tv_journey_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Departure Time"
+            android:id="@+id/tv_departure_time"
+            android:layout_below="@+id/tv_departure_date"
+            android:layout_alignEnd="@+id/tv_departure" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="arrival time"
+            android:id="@+id/tv_arrival_time"
+            android:layout_below="@+id/tv_arrival_Date"
+            android:layout_alignEnd="@+id/tv_arrival" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="duration"
+            android:id="@+id/tv_duration"
+            android:layout_alignTop="@+id/tv_departure_time"
+            android:layout_alignEnd="@+id/tv_distance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="distance"
+            android:id="@+id/tv_distance"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_departure"
+            android:layout_marginStart="9dp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
